@@ -1,0 +1,137 @@
+package wingan.app;
+
+
+import anywheresoftware.b4a.BA;
+import anywheresoftware.b4a.B4AClass;
+import anywheresoftware.b4a.BALayout;
+import anywheresoftware.b4a.debug.*;
+
+public class b4xbitset extends B4AClass.ImplB4AClass implements BA.SubDelegator{
+    private static java.util.HashMap<String, java.lang.reflect.Method> htSubs;
+    private void innerInitialize(BA _ba) throws Exception {
+        if (ba == null) {
+            ba = new BA(_ba, this, htSubs, "wingan.app.b4xbitset");
+            if (htSubs == null) {
+                ba.loadHtSubs(this.getClass());
+                htSubs = ba.htSubs;
+            }
+            
+        }
+        if (BA.isShellModeRuntimeCheck(ba)) 
+			   this.getClass().getMethod("_class_globals", wingan.app.b4xbitset.class).invoke(this, new Object[] {null});
+        else
+            ba.raiseEvent2(null, true, "class_globals", false);
+    }
+
+ public anywheresoftware.b4a.keywords.Common __c = null;
+public int[] _data = null;
+public int _msize = 0;
+public b4a.example.dateutils _dateutils = null;
+public wingan.app.main _main = null;
+public wingan.app.login_module _login_module = null;
+public wingan.app.dashboard_module _dashboard_module = null;
+public wingan.app.return_module _return_module = null;
+public wingan.app.cancelled_module _cancelled_module = null;
+public wingan.app.sales_return_module _sales_return_module = null;
+public wingan.app.preparing_module _preparing_module = null;
+public wingan.app.loading_module _loading_module = null;
+public wingan.app.daily_count _daily_count = null;
+public wingan.app.inventory_table _inventory_table = null;
+public wingan.app.montlhy_inventory2_module _montlhy_inventory2_module = null;
+public wingan.app.price_checking_module _price_checking_module = null;
+public wingan.app.expiration_module _expiration_module = null;
+public wingan.app.daily_inventory_module _daily_inventory_module = null;
+public wingan.app.daily_template _daily_template = null;
+public wingan.app.database_module _database_module = null;
+public wingan.app.monthly_inventory_module _monthly_inventory_module = null;
+public wingan.app.monthlyinv_module _monthlyinv_module = null;
+public wingan.app.number _number = null;
+public wingan.app.receiving_module _receiving_module = null;
+public wingan.app.receiving2_module _receiving2_module = null;
+public wingan.app.scale_calc _scale_calc = null;
+public wingan.app.starter _starter = null;
+public wingan.app.httputils2service _httputils2service = null;
+public wingan.app.b4xcollections _b4xcollections = null;
+public String  _class_globals() throws Exception{
+ //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
+ //BA.debugLineNum = 5;BA.debugLine="Private data() As Int";
+_data = new int[(int) (0)];
+;
+ //BA.debugLineNum = 7;BA.debugLine="Private mSize As Int";
+_msize = 0;
+ //BA.debugLineNum = 8;BA.debugLine="End Sub";
+return "";
+}
+public String  _clear() throws Exception{
+ //BA.debugLineNum = 53;BA.debugLine="Public Sub Clear";
+ //BA.debugLineNum = 57;BA.debugLine="Dim data(Bit.ShiftRight(mSize, 5) + 1) As Int";
+_data = new int[(int) (__c.Bit.ShiftRight(_msize,(int) (5))+1)];
+;
+ //BA.debugLineNum = 59;BA.debugLine="End Sub";
+return "";
+}
+public boolean  _get(int _index) throws Exception{
+int _dindex = 0;
+int _offset = 0;
+int _blockvalue = 0;
+ //BA.debugLineNum = 38;BA.debugLine="Public Sub Get(Index As Int) As Boolean";
+ //BA.debugLineNum = 39;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
+_dindex = __c.Bit.ShiftRight(_index,(int) (5));
+ //BA.debugLineNum = 40;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
+_offset = __c.Bit.And((int) (0x0000001f),_index);
+ //BA.debugLineNum = 44;BA.debugLine="Dim BlockValue As Int = data(dindex)";
+_blockvalue = _data[_dindex];
+ //BA.debugLineNum = 46;BA.debugLine="Return Bit.And(BlockValue, Bit.ShiftLeft(1, offse";
+if (true) return __c.Bit.And(_blockvalue,__c.Bit.ShiftLeft((int) (1),_offset))!=0;
+ //BA.debugLineNum = 47;BA.debugLine="End Sub";
+return false;
+}
+public int  _getsize() throws Exception{
+ //BA.debugLineNum = 49;BA.debugLine="Public Sub getSize As Int";
+ //BA.debugLineNum = 50;BA.debugLine="Return mSize";
+if (true) return _msize;
+ //BA.debugLineNum = 51;BA.debugLine="End Sub";
+return 0;
+}
+public String  _initialize(anywheresoftware.b4a.BA _ba,int _size) throws Exception{
+innerInitialize(_ba);
+ //BA.debugLineNum = 10;BA.debugLine="Public Sub Initialize (Size As Int)";
+ //BA.debugLineNum = 11;BA.debugLine="mSize = Size";
+_msize = _size;
+ //BA.debugLineNum = 12;BA.debugLine="Clear";
+_clear();
+ //BA.debugLineNum = 13;BA.debugLine="End Sub";
+return "";
+}
+public String  _set(int _index,boolean _value) throws Exception{
+int _dindex = 0;
+int _offset = 0;
+int _blockvalue = 0;
+int _newblockvalue = 0;
+ //BA.debugLineNum = 16;BA.debugLine="Public Sub Set(Index As Int, Value As Boolean)";
+ //BA.debugLineNum = 17;BA.debugLine="Dim dindex As Int = Bit.ShiftRight(Index, 5)";
+_dindex = __c.Bit.ShiftRight(_index,(int) (5));
+ //BA.debugLineNum = 18;BA.debugLine="Dim offset As Int = Bit.And(0x0000001f, Index)";
+_offset = __c.Bit.And((int) (0x0000001f),_index);
+ //BA.debugLineNum = 22;BA.debugLine="Dim BlockValue As Int = data(dindex)";
+_blockvalue = _data[_dindex];
+ //BA.debugLineNum = 24;BA.debugLine="Dim NewBlockValue As Int";
+_newblockvalue = 0;
+ //BA.debugLineNum = 25;BA.debugLine="If Value Then";
+if (_value) { 
+ //BA.debugLineNum = 26;BA.debugLine="NewBlockValue = Bit.Or(BlockValue, Bit.ShiftLeft";
+_newblockvalue = __c.Bit.Or(_blockvalue,__c.Bit.ShiftLeft((int) (1),_offset));
+ }else {
+ //BA.debugLineNum = 28;BA.debugLine="NewBlockValue = Bit.And(BlockValue, Bit.Not(Bit.";
+_newblockvalue = __c.Bit.And(_blockvalue,__c.Bit.Not(__c.Bit.ShiftLeft((int) (1),_offset)));
+ };
+ //BA.debugLineNum = 33;BA.debugLine="data(dindex) = NewBlockValue";
+_data[_dindex] = _newblockvalue;
+ //BA.debugLineNum = 35;BA.debugLine="End Sub";
+return "";
+}
+public Object callSub(String sub, Object sender, Object[] args) throws Exception {
+BA.senderHolder.set(sender);
+return BA.SubDelegator.SubNotFound;
+}
+}

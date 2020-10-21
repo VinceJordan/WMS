@@ -1,0 +1,7 @@
+Voulez-vous vraiment quitter le programme?
+Quitter
+Oui
+Non
+Voulez-vous vraiment effacer la calcul actuel ?
+A T T E N T I O N
+

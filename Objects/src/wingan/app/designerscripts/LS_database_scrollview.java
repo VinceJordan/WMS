@@ -1,0 +1,94 @@
+package wingan.app.designerscripts;
+import anywheresoftware.b4a.objects.TextViewWrapper;
+import anywheresoftware.b4a.objects.ImageViewWrapper;
+import anywheresoftware.b4a.BA;
+
+
+public class LS_database_scrollview{
+
+public static void LS_general(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
+anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
+anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
+views.get("panel_product_tbl").vw.setTop((int)((2d / 100 * height)));
+views.get("panel_product_tbl").vw.setLeft((int)((3d / 100 * width)));
+views.get("panel_product_tbl").vw.setWidth((int)((94d / 100 * width)));
+views.get("panel_product_tbl").vw.setHeight((int)((8d / 100 * height)));
+views.get("label_table").vw.setTop((int)((1d / 100 * height)));
+views.get("label_table").vw.setLeft((int)((2d / 100 * width)));
+views.get("label_table").vw.setWidth((int)((10d / 100 * width)));
+views.get("label_table").vw.setHeight((int)((6d / 100 * height)));
+views.get("label_product_tbl").vw.setTop((int)((.5d / 100 * height)));
+views.get("label_product_tbl").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_product_tbl").vw.setWidth((int)((60d / 100 * width)));
+views.get("label_product_tbl").vw.setHeight((int)((4d / 100 * height)));
+views.get("label_last_producttbl").vw.setTop((int)((4.5d / 100 * height)));
+views.get("label_last_producttbl").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_last_producttbl").vw.setWidth((int)((67d / 100 * width)));
+views.get("label_last_producttbl").vw.setHeight((int)((3d / 100 * height)));
+views.get("button_update_producttbl").vw.setTop((int)((.5d / 100 * height)));
+views.get("button_update_producttbl").vw.setLeft((int)((82d / 100 * width)));
+views.get("button_update_producttbl").vw.setWidth((int)((10d / 100 * width)));
+views.get("button_update_producttbl").vw.setHeight((int)((7d / 100 * height)));
+views.get("panel_warehouse").vw.setTop((int)((11d / 100 * height)));
+views.get("panel_warehouse").vw.setLeft((int)((3d / 100 * width)));
+views.get("panel_warehouse").vw.setWidth((int)((94d / 100 * width)));
+views.get("panel_warehouse").vw.setHeight((int)((8d / 100 * height)));
+views.get("label_ware").vw.setTop((int)((1d / 100 * height)));
+views.get("label_ware").vw.setLeft((int)((2d / 100 * width)));
+views.get("label_ware").vw.setWidth((int)((10d / 100 * width)));
+views.get("label_ware").vw.setHeight((int)((6d / 100 * height)));
+views.get("label_warehouse").vw.setTop((int)((.5d / 100 * height)));
+views.get("label_warehouse").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_warehouse").vw.setWidth((int)((60d / 100 * width)));
+views.get("label_warehouse").vw.setHeight((int)((4d / 100 * height)));
+views.get("label_last_warehouse").vw.setTop((int)((4.5d / 100 * height)));
+views.get("label_last_warehouse").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_last_warehouse").vw.setWidth((int)((67d / 100 * width)));
+views.get("label_last_warehouse").vw.setHeight((int)((3d / 100 * height)));
+views.get("button_update_warehouse").vw.setTop((int)((.5d / 100 * height)));
+views.get("button_update_warehouse").vw.setLeft((int)((82d / 100 * width)));
+views.get("button_update_warehouse").vw.setWidth((int)((10d / 100 * width)));
+views.get("button_update_warehouse").vw.setHeight((int)((7d / 100 * height)));
+views.get("panel_principal").vw.setTop((int)((20d / 100 * height)));
+views.get("panel_principal").vw.setLeft((int)((3d / 100 * width)));
+views.get("panel_principal").vw.setWidth((int)((94d / 100 * width)));
+views.get("panel_principal").vw.setHeight((int)((8d / 100 * height)));
+views.get("label_prin").vw.setTop((int)((1d / 100 * height)));
+views.get("label_prin").vw.setLeft((int)((2d / 100 * width)));
+views.get("label_prin").vw.setWidth((int)((10d / 100 * width)));
+views.get("label_prin").vw.setHeight((int)((6d / 100 * height)));
+views.get("label_principal").vw.setTop((int)((.5d / 100 * height)));
+views.get("label_principal").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_principal").vw.setWidth((int)((60d / 100 * width)));
+views.get("label_principal").vw.setHeight((int)((4d / 100 * height)));
+views.get("label_last_principal").vw.setTop((int)((4.5d / 100 * height)));
+views.get("label_last_principal").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_last_principal").vw.setWidth((int)((67d / 100 * width)));
+views.get("label_last_principal").vw.setHeight((int)((3d / 100 * height)));
+views.get("button_update_principal").vw.setTop((int)((.5d / 100 * height)));
+views.get("button_update_principal").vw.setLeft((int)((82d / 100 * width)));
+views.get("button_update_principal").vw.setWidth((int)((10d / 100 * width)));
+views.get("button_update_principal").vw.setHeight((int)((7d / 100 * height)));
+views.get("panel_expiration").vw.setTop((int)((29d / 100 * height)));
+views.get("panel_expiration").vw.setLeft((int)((3d / 100 * width)));
+views.get("panel_expiration").vw.setWidth((int)((94d / 100 * width)));
+views.get("panel_expiration").vw.setHeight((int)((8d / 100 * height)));
+views.get("label_exp").vw.setTop((int)((1d / 100 * height)));
+views.get("label_exp").vw.setLeft((int)((2d / 100 * width)));
+views.get("label_exp").vw.setWidth((int)((10d / 100 * width)));
+views.get("label_exp").vw.setHeight((int)((6d / 100 * height)));
+views.get("label_expiration").vw.setTop((int)((.5d / 100 * height)));
+views.get("label_expiration").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_expiration").vw.setWidth((int)((60d / 100 * width)));
+views.get("label_expiration").vw.setHeight((int)((4d / 100 * height)));
+views.get("label_last_expiration").vw.setTop((int)((4.5d / 100 * height)));
+views.get("label_last_expiration").vw.setLeft((int)((15d / 100 * width)));
+views.get("label_last_expiration").vw.setWidth((int)((67d / 100 * width)));
+views.get("label_last_expiration").vw.setHeight((int)((3d / 100 * height)));
+views.get("button_update_expiration").vw.setTop((int)((.5d / 100 * height)));
+views.get("button_update_expiration").vw.setLeft((int)((82d / 100 * width)));
+views.get("button_update_expiration").vw.setWidth((int)((10d / 100 * width)));
+views.get("button_update_expiration").vw.setHeight((int)((7d / 100 * height)));
+
+}
+}

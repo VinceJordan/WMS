@@ -1,0 +1,6 @@
+Do you really want to exit the program?
+E x i t
+Yes
+No
+Do you really want to clear the calculation
+A T T E N T I O N

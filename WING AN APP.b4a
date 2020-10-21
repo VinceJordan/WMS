@@ -1,0 +1,407 @@
+﻿Build1=Default,wingan.app
+File1=add.png
+File10=cover.jpg
+File11=daily.bal
+File12=daily.png
+File13=daily_count.bal
+File14=daily_create.bal
+File15=dashboard.bal
+File16=dashboard_scrollview.bal
+File17=database.bal
+File18=database_scrollview.bal
+File19=DESIGNER.bal
+File2=back.png
+File20=download.png
+File21=drawer.bal
+File22=drawer_bg.jpeg
+File23=expiration.bal
+File24=expiration.png
+File25=image_1.jpg
+File26=image_2.jpg
+File27=inventory.png
+File28=loading.png
+File29=LOGIN_DESIGN.bal
+File3=BANNER.jpg
+File30=LOGO_3D.png
+File31=LOGO3D.png
+File32=menu.png
+File33=monthly.bal
+File34=monthly2.bal
+File35=monthly2_scrollview.bal
+File36=picklist_loading.bal
+File37=picklist_preparing.bal
+File38=picklist_preparing_scrollview.bal
+File39=preparing.png
+File4=bluetooth.png
+File40=price_check.bal
+File41=receiving.bal
+File42=receiving.png
+File43=receiving2.bal
+File44=return.bal
+File45=sales_return.bal
+File46=table.png
+File47=table_inventory.bal
+File48=tablet_db.db
+File49=tapecalc_de.txt
+File5=bluetooth_connected.png
+File50=tapecalc_en.txt
+File51=tapecalc_fr.txt
+File52=upload.png
+File53=WMS.png
+File6=bluetooth_connecting.png
+File7=bluetooth_notconnected.png
+File8=cancelled.bal
+File9=check.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=core
+Library10=javaobject
+Library11=serial
+Library12=appcompat
+Library13=reflection
+Library14=b4xtable
+Library15=xui
+Library16=b4xcollections
+Library17=b4xformatter
+Library18=xmllayoutbuilder
+Library19=tts
+Library2=carouselview
+Library20=viewsex
+Library21=xcustomlistview
+Library3=xui views
+Library4=runtimepermissions
+Library5=sql
+Library6=ime
+Library7=phone
+Library8=okhttputils2
+Library9=randomaccessfile
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="29"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~~\n~AddManifestText(~\n~<uses-permission~\n~  android:name="android.permission.WRITE_EXTERNAL_STORAGE"~\n~  android:maxSdkVersion="28" />~\n~)~\n~AddManifestText(~\n~<uses-permission~\n~  android:name="android.permission.READ_PHONE_STATE"~\n~  android:maxSdkVersion="28" />~\n~)~\n~~\n~SetActivityAttribute(main, android:theme, @android:style/Theme.Translucent.NoTitleBar)~\n~SetActivityAttribute(MONTLHY_INVENTORY2_MODULE,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~SetActivityAttribute(DAILY_TEMPLATE,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~SetActivityAttribute(DAILY_COUNT,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~SetActivityAttribute(PREPARING_MODULE,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~SetActivityAttribute(RECEIVING2_MODULE,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~SetActivityAttribute(PRICE_CHECKING_MODULE,  android:windowSoftInputMode, "stateHidden|adjustPan")~\n~~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~CreateResource(values, colors.xml,~\n~<resources>~\n~    <color name="actionbar">#ff039be5</color>~\n~   <color name="statusbar">#ff006db3</color>~\n~   <color name="textColorPrimary">#ff000000</color>~\n~   <color name="navigationBar">#ff006db3</color>~\n~</resources>~\n~)~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~    <style name="MyAppTheme" parent="Theme.AppCompat.Light">~\n~        <item name="colorPrimary">@color/actionbar</item>~\n~        <item name="colorPrimaryDark">@color/statusbar</item>~\n~       <item name="android:textColorPrimary">@color/textColorPrimary</item>~\n~       <item name="android:navigationBarColor">@color/navigationBar</item>~\n~       <item name="windowNoTitle">true</item>~\n~       <item name="windowActionBar">false</item>~\n~       <item name="windowActionModeOverlay">true</item>~\n~    </style>~\n~</resources>~\n~)~\n~~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")
+Module1=B4XDrawer
+Module10=EXPIRATION_MODULE
+Module11=INVENTORY_TABLE
+Module12=LOADING_MODULE
+Module13=LOGIN_MODULE
+Module14=MONTHLY_INVENTORY_MODULE
+Module15=MONTHLYINV_MODULE
+Module16=MONTLHY_INVENTORY2_MODULE
+Module17=Number
+Module18=PREPARING_MODULE
+Module19=PRICE_CHECKING_MODULE
+Module2=B4XTableSelections
+Module20=RECEIVING_MODULE
+Module21=RECEIVING2_MODULE
+Module22=RETURN_MODULE
+Module23=SALES_RETURN_MODULE
+Module24=Scale_Calc
+Module25=Starter
+Module3=CANCELLED_MODULE
+Module4=DAILY_COUNT
+Module5=DAILY_INVENTORY_MODULE
+Module6=DAILY_TEMPLATE
+Module7=DASHBOARD_MODULE
+Module8=DATABASE_MODULE
+Module9=DBRequestManager
+NumberOfFiles=53
+NumberOfLibraries=21
+NumberOfModules=25
+Version=10
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: WMS
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: Portrait
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: True
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	'PERMISSION
+	Private rp As RuntimePermissions
+	
+	'Cursor
+	Dim cursor1 As Cursor
+	Dim cursor2 As Cursor
+	Dim cursor3 As Cursor
+	
+	Dim last_login As String
+
+	
+	'SPLASH
+	Dim SPLASH_TIMER As Timer
+	
+	'SQL
+	Dim connection As SQL
+	
+	'JRDC
+	Type DBResult (Tag As Object, Columns As Map, Rows As List)
+	Type DBCommand (Name As String, Parameters() As Object)
+	Public const rdclink As String = "http://172.16.0.81:17180/rdc"
+'	Public const rdclink As String = "http://172.16.0.35:17170/rdc"
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	
+	Dim FADE_COUNT As Int
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+		Activity.LoadLayout("DESIGNER")
+		SPLASH_TIMER.Initialize("SPLASH_TIMER", 50)
+		SPLASH_TIMER.Enabled = True
+		FADE_COUNT = 0
+	DateTime.TimeFormat = "hh:mm a"
+	DateTime.DateFormat = "yyyy-MM-dd"
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Public Sub Activity_AfterChange
+	
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub SPLASH_TIMER_Tick
+	FADE_COUNT = FADE_COUNT + 1
+	Activity.Color = Colors.ARGB(Min(FADE_COUNT * 5, 0), 0, 0, 0)
+	If FADE_COUNT > 60 Then Splash_End
+End Sub
+
+Sub Splash_End
+	SPLASH_TIMER.Enabled = False
+	rp.CheckAndRequest(rp.PERMISSION_READ_EXTERNAL_STORAGE)
+	Wait For Activity_PermissionResult (Permission As String, Result As Boolean)
+	If Result Then
+		Log(File.DirRootExternal & "/WING AN APP/")
+		File.MakeDir(File.DirRootExternal,"WING AN APP")
+
+		If File.Exists(File.DirRootExternal & "/WING AN APP/","tablet_db.db") = False Then
+			File.Copy(File.DirAssets,"tablet_db.db", File.DirRootExternal & "/WING AN APP/","tablet_db.db")
+		End If
+		Sleep(0)
+		If connection.IsInitialized = False Then
+			connection.Initialize(File.DirRootExternal & "/WING AN APP/","tablet_db.db", False)
+		End If
+	Sleep(0)
+		AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","user_token_table","user TEXT, token TEXT, last_login TEXT, last_logout TEXT")
+		Sleep(100)
+		ADD_PICKLIST_RETURN_REF
+		Sleep(0)
+		ADD_CANCELLED_INVOICE_REF
+		Sleep(0)
+		ADD_CANCELLED_INVOICE_DISC
+		Sleep(0)
+		ADD_WRONG_SERVE
+		Sleep(0)
+		ADD_NEAR_EXPIRY
+		Sleep(0)
+		ADD_CANCELLED_UPLOAD
+		Sleep(0)
+		ADD_CUSTOMER
+		Sleep(0)
+		ADD_SALESMAN
+		Sleep(0)
+		ADD_SALES_RETURN_REF
+		Sleep(0)
+		ADD_SALES_RETURN_REF_TRAIL
+		Sleep(0)
+		ADD_SALES_RETURN_DISC
+		Sleep(0)
+		ADD_SALES_RETURN_DISC_TRAIL
+		Sleep(0)
+		ADD_RETURN_UPLOAD
+		Sleep(0)
+		ADD_RETURN_EXPIRY
+		Sleep(0)
+		CHOOSE_TOKEN
+	Else
+		Msgbox2Async("Please accept storage permission to proceed." , "Warning", "", "", "OK", LoadBitmap(File.DirAssets, "LOGO_3D.png"), True)
+	End If
+End Sub
+
+Sub AddTable(Path As String, FileName As String, NameTable As String,Fields As String) As Boolean
+	' Files. es
+	' "ID INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT, Position NUMERIC, Quantity INTEGER"
+	Dim DB As SQL
+	Dim S As String
+	Dim B As Boolean = False
+   
+	DB.Initialize(Path,FileName,False)
+	S=DB.ExecQuerySingleResult("SELECT name FROM sqlite_master WHERE type='table' AND name='" & NameTable &"';")
+	If S=Null Then
+		DB.ExecNonQuery("CREATE TABLE " & NameTable &" (" & Fields & ")" )
+		B=True
+	End If
+	Return b
+End Sub
+
+Sub CHOOSE_TOKEN
+	Dim TOKEN As Int
+	Dim user As String
+	
+	cursor1 = connection.ExecQuery("SELECT * FROM user_token_table")
+	If cursor1.RowCount > 0 Then
+		For row = 0 To cursor1.RowCount - 1
+			cursor1.Position = row
+			TOKEN = cursor1.GetString("token")
+			user = cursor1.GetString("user")
+		Next
+		If TOKEN = 1 Then
+			LOGIN_MODULE.username = user
+			StartActivity(DASHBOARD_MODULE)
+		Else
+			StartActivity(LOGIN_MODULE)
+		End If
+	Else
+		StartActivity(LOGIN_MODULE)
+	End If
+End Sub
+
+Sub CREATE_TABLES
+	
+End Sub
+
+Sub ADD_PICKLIST_RETURN_REF
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","picklist_return_ref_table","return_route_id TEXT ,picklist_id TEXT"& _
+	", picklist_name TEXT, route_name TEXT, plate_no TEXT, driver TEXT, helper1 TEXT, helper2 TEXT, helper3 TEXT"& _
+	", date_return TEXT, time_return TEXT, date_time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_CANCELLED_INVOICE_REF
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","cancelled_invoice_ref_table","customer_id TEXT"& _
+	", customer_name TEXT, invoice_no TEXT, invoice_date TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT, date_time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_CANCELLED_INVOICE_DISC
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","cancelled_invoice_disc_table","customer_id TEXT"& _
+	", customer_name TEXT, invoice_no TEXT, invoice_date TEXT, transaction_number TEXT,principal_id TEXT,principal_name TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT, scan_code TEXT, input_reason TEXT, cancelled_reason TEXT, cancelled_id TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_WRONG_SERVE
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","wrong_served_table","invoice_no TEXT,cancelled_id TEXT"& _
+	", principal_id TEXT,principal_name TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT, scan_code TEXT, input_reason TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_NEAR_EXPIRY
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","near_expiry_table","invoice_no TEXT, transaction_number TEXT"& _
+	", principal_id TEXT,principal_name TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT,month_expired TEXT,year_expired TEXT,date_expired TEXT,month_manufactured TEXT,year_manufactured TEXT" & _
+	", date_manufactured TEXT, scan_code TEXT, input_reason TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_CANCELLED_UPLOAD
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","cancelled_upload_table","invoice_no TEXT, upload_date TEXT"& _
+	", upload_time TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_CUSTOMER
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","customer_table","customer_id TEXT, customer_name TEXT")
+End Sub
+
+Sub ADD_SALESMAN
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","salesman_table","employee_id TEXT, sales_position_id TEXT"& _
+	", sales_position_name TEXT, employee_name TEXT")
+End Sub
+
+Sub ADD_SALES_RETURN_REF
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","sales_return_ref_table","return_route_id TEXT, return_id TEXT, return_date TEXT"& _
+	", return_number TEXT, customer_id TEXT, customer_name TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_SALES_RETURN_REF_TRAIL
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","sales_return_ref_table_trail","return_route_id TEXT, return_id TEXT, return_date TEXT"& _
+	", return_number TEXT, customer_id TEXT, customer_name TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT, date_modified TEXT, time_modified TEXT, modified_by TEXT, modified_type TEXT")
+End Sub
+
+Sub ADD_SALES_RETURN_DISC
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","sales_return_disc_table","return_id TEXT, transaction_number TEXT"& _
+	", salesman_position_id TEXT, salesman_name TEXT, principal_id TEXT,principal_name TEXT, warehouse TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT, scan_code TEXT, input_reason TEXT, return_reason TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_SALES_RETURN_DISC_TRAIL
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","sales_return_disc_table_trail","return_id TEXT, transaction_number TEXT"& _
+	", salesman_position_id TEXT, salesman_name TEXT, principal_id TEXT,principal_name TEXT, warehouse TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT, scan_code TEXT, input_reason TEXT, return_reason TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT, date_modified TEXT, time_modified TEXT, modified_by TEXT, modified_type TEXT")
+End Sub
+
+Sub ADD_RETURN_UPLOAD
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","return_upload_table","return_id TEXT, upload_date TEXT"& _
+	", upload_time TEXT, user_info TEXT, tab_id TEXT")
+End Sub
+
+Sub ADD_RETURN_EXPIRY
+	AddTable(File.DirRootExternal & "/WING AN APP/","tablet_db.db","sales_return_expiry_table","return_id TEXT, transaction_number TEXT"& _
+	", principal_id TEXT,principal_name TEXT, warehouse TEXT, product_id TEXT, product_variant TEXT, product_description TEXT, unit TEXT"& _
+	", quantity TEXT, total_pieces TEXT,month_expired TEXT,year_expired TEXT,date_expired TEXT,month_manufactured TEXT,year_manufactured TEXT" & _
+	", date_manufactured TEXT, scan_code TEXT, input_reason TEXT, date_registered TEXT, time_registered TEXT, user_info TEXT, tab_id TEXT")
+End Sub
